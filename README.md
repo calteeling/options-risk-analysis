@@ -10,8 +10,7 @@ Built as a data science portfolio project to demonstrate applied financial model
 Below is an example screenshot from the Options Risk Analysis Tool web app:
 
 ### Call & Put Matrix Heatmaps
-![Heatmap](<img width="3420" height="1968" alt="HeatmapScreenshot" src="https://github.com/user-attachments/assets/6f20ddbd-cac9-4705-aeb1-5343f4b25c6b" />
-)
+![Heatmap](HeatmapScreenshot.png)
 
 ## Features
 
