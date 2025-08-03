@@ -1,106 +1,88 @@
-# Options Risk Matrix (Black-Scholes Model)
+# Options Risk Analysis Tool
+![License](https://img.shields.io/badge/License-MIT-green.svg)
 
+This project is an interactive web app for visualizing option pricing matrices using the Black-Scholes model. Users can dynamically generate call and put option price heatmaps based on real-time data for any stock ticker.
 
-
-This project provides an interactive Streamlit app for visualizing call and put option prices using the Black-Scholes model. Users can analyze how option premiums change with volatility and strike price, helping them understand risk and reward across different market scenarios.
-
-[Live Demo Coming Soon]
+Built as a data science portfolio project to demonstrate applied financial modeling, Python engineering, and front-end interactivity with Streamlit.
 
 ## Preview
 
-Below is an example preview of the Options Risk Matrix heatmaps:
+Below is an example screenshot from the Options Risk Analysis Tool web app:
 
-Call and Put Price Heatmaps
-
-
+### Call & Put Matrix Heatmaps
+![Matrix Preview](screenshots/matrix.png)
 
 ## Features
 
-Side-by-side call and put option heatmaps
-
-Dynamic user input:
-
-Ticker symbol
-
-Expiration date (fetched live from options chain)
-
-Risk-free rate
-
-Volatility range
-
-Red-to-green gradient for intuitive pricing visualization
-
-Contrast-sensitive labeling in each matrix cell
-
-Historical volatility estimation using log returns
-
-Spot price line displayed for easy reference
+- Real-time data fetching via Yahoo Finance API
+- Black-Scholes modeling of call and put prices
+- 10x10 price heatmaps based on strike price and volatility
+- Ticker input with autocomplete suggestions
+- Custom selection of expiration date, risk-free rate, and volatility range
+- Streamlit interface with side panel controls
+- Dynamic color mapping from red (low value) to green (high value)
 
 ## Tech Stack
 
 - Python
-
 - Streamlit
-
-- Pandas
-
+- yfinance
 - NumPy
-
-- Matplotlib
-
+- Pandas
 - Seaborn
-
-- SciPy (for norm.cdf)
-
-- yFinance (for market data)
+- Matplotlib
+- SciPy
 
 ## Installation
 
-Clone the repository:
+1. Clone the repository:
 
-git clone https://github.com/your-username/options-risk-analysis.git
-cd options-risk-analysis
+   ```bash
+   git clone https://github.com/yourusername/options-risk-analysis.git
+   cd options-risk-analysis
+   ```
 
-Create and activate a virtual environment:
+2. (Optional but recommended) Create and activate a virtual environment:
 
-python -m venv venv
-source venv/bin/activate     # Windows: venv\Scripts\activate
+   ```bash
+   python -m venv venv
+   source venv/bin/activate  # Windows: venv\Scripts\activate
+   ```
 
-Install the dependencies:
+3. Install the dependencies:
 
-pip install -r requirements.txt
+   ```bash
+   pip install -r requirements.txt
+   ```
 
 ## Running the App
 
-To launch the app:
+To launch the app in your browser:
 
+```bash
 streamlit run app.py
+```
 
 ## Testing
 
-To run all unit tests:
+To run unit tests:
 
-python -m unittest tests.py
+```bash
+python tests.py
+```
 
 ## Insights
 
-This project was inspired by educational tools like those seen in options trading tutorials and applications. It is designed to offer a clean, visual interface to understand how option premiums respond to changing market conditions.
+This project was inspired by the visual matrix-style options tools used by professional analysts. I wanted to create a lightweight version that helps traders and learners intuitively understand how strike prices and volatility affect options valuation.
 
-Some design decisions:
+One challenge was ensuring that the heatmaps remained interpretable while offering enough parameter flexibility to simulate different market scenarios. I also prioritized performance and usability, including real-time ticker handling and a clean UI.
 
-The volatility slider gives users control over scenario testing.
+This tool is meant for educational and analytical purposes. It could be expanded in the future to include historical implied volatility, Greeks, profit/loss zones, and machine learning forecasts.
 
-Expiration dates are real options dates to reflect actual market choices.
+## License
 
-The heatmap colors reflect intuitive market sentiment (red = cheap, green = expensive).
+This project is licensed under the MIT License.
 
-In the future, more advanced features like implied volatility modeling, Greeks, or P&L simulation may be added.
+## Author
 
-License
-
-MIT License
-
-Author
-
-Developed by Cal Teeling as part of a finance and data science portfolio.
-
+Developed by Cal Teeling as part of a financial data science portfolio.
