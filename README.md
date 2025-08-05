@@ -1,6 +1,5 @@
 # Options Risk Analysis Tool
 ![License](https://img.shields.io/badge/License-MIT-green.svg)
-Note: The live demo may take ~20 seconds to load if inactive (free-tier hosting). Thank you for your patience!
 
 
 This project is an interactive web app for visualizing option pricing matrices using the Black-Scholes model. Users can dynamically generate call and put option price heatmaps based on real-time data for any stock ticker.
@@ -10,6 +9,8 @@ Built as a data science portfolio project to demonstrate applied financial model
 ## Preview
 
 [View the Live Demo on Streamlit Cloud](https://options-risk-analysis-jsdhgi4skbdrxyekao7cw6.streamlit.app/)
+
+Note: The live demo may take ~20 seconds to load if inactive (free-tier hosting). Thank you for your patience!
 
 Below is an example screenshot from the Options Risk Analysis Tool web app:
 
